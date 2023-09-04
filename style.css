@@ -4,9 +4,7 @@
     box-sizing: border-box;
 }
 
-/* img{
-    display: block;
-} */
+
 .options-cont{
     height: 4rem;
     width: 3.5rem;
@@ -19,25 +17,24 @@
     justify-content: center;
     border-radius: 50%;
     font-size: 2rem;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;/*getcssscan box-shadow copy*/
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     
 } 
 .tools-cont{
     display: flex;
     height: 5rem;
-    width: 55vw; /*fit-content*/
+    width: 55vw; 
     justify-content: space-around;
     background-color: lightgreen;
     position: absolute;
     top: 2rem;
-    left: 25vw; /* This was also for centering */
-    /* display default margin: auto;for centering .. calculated by width of item */
+    left: 25vw; 
     margin-top: 2rem; 
     background-color: #f1f2f6;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
-.scale-tools{ /* for animations  */
+.scale-tools{ 
     animation-name: scale-tools;
     animation-duration: 1s;
 }
@@ -61,25 +58,22 @@
     position: absolute;
     top: 9rem;
     left: 25vw;
-    /* background-color: lightcoral;  just for viibilty if editing*/
     background-color: #f1f2f6;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     border-radius: 5px;
-    display: none; /* block 9not flex */
+    display: none; 
 }
 .pencil-width-cont{
     height: 2rem;
     display: flex;
-    align-items: center; /*don't kbow why but not needed */
+    align-items: center;
     justify-content: center;
-    /* background-color: orange; */
 }
 .pencil-width-cont input{
     width: 80%;
 }
 
 .pencil-color-cont{
-    /* background-color: yellow; */
     height: calc(100% - 2rem);
     display: flex;
     justify-content: center;
@@ -106,7 +100,7 @@
 .eraser-tool-cont{
     height: 2rem;
     width:7rem;
-    display: none; /* flex */
+    display: none; 
     align-items: center; 
     justify-content: center;
     background-color: lightblue;
@@ -133,9 +127,8 @@
     height: 2rem;
     background-color: lightseagreen;
     display: flex;
-    justify-content: flex-end; /*main axis  NOW HORIZONTAL  */ 
-    align-items: center; /*cross axis now vertical*/
-   
+    justify-content: flex-end; 
+    align-items: center; 
 }
 .header-cont>*{
     height: 1.3rem;
@@ -150,21 +143,20 @@
     background-color: #eb2f06;
 }
 .note-cont{
-    /* height: 13rem; */
-   
+  
     height: calc(100% - 2rem);
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; /*sirf iski wajah se bhi white element dikhne lagta hai */
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; 
 }
 textarea{
-    height: 100%; /*note-cont ki 100% not sticky cont */
+    height: 100%;
     width: 100%;
     border: none;
-    outline: none; /*selct karne pe highlight nhi hoga */
+    outline: none;
     resize:none;
     padding: 10px;
 }
 
-img{ /* upload image in sticky-cont>text area */
+img{
     height: 100%;
     width: 100%;
 }
