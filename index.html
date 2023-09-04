@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Board</title>
+    <link rel="stylesheet" href="./style.css">
+
+    <link rel="shortcut icon" href="./icons/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head> 
+
+<body>
+    <div class="options-cont">
+        <i class="fa-solid fa-bars"></i>
+    </div>
+
+    <div class="tools-cont scale-tools">
+        <img class="pencil" src="./icons/Pencil.svg">
+        <img class="eraser" src="./icons/Eraser.svg">
+        <img class="download" src="./icons/Download.svg">
+        <img class="upload" src="./icons/Upload.svg">
+        <img class="sticky" src="./icons/StickyNote.svg">
+        <img class="undo" src="./icons/Undo.svg">
+        <img class="redo" src="./icons/Redo.svg">
+    </div>
+    <div class="pencil-tool-cont">
+        <div class="pencil-width-cont">
+            <input class="pencil-width" type="range" min="2" max="10" value="3">
+        </div>
+        <div class="pencil-color-cont">
+            <div class="black pencil-color"></div>
+            <div class="red pencil-color"></div>
+            <div class="blue pencil-color"></div>
+        </div>
+    </div>
+
+    <div class="eraser-tool-cont">
+        <input class="eraser-width" type="range" min="2" max="10" value="3">
+    </div>
+
+    <!-- <div class="sticky-cont">
+        <div class="header-cont">
+            <div class="minimise"></div>
+            <div class="remove"></div>
+        </div>
+        <div class="note-cont">
+            <textarea spellcheck="false"></textarea>
+        </div>
+    </div> -->
+
+    <canvas></canvas>
+
+    <script src="https://cdn.socket.io/4.6.0/socket.io.min.js"
+        integrity="sha384-c79GN5VsunZvi+Q/WObgk2in0CbZsHnjEqvFxC5DxHn9lTfNce2WW6h2pH6u/kF+"
+        crossorigin="anonymous"></script>
+
+        <script>
+            //jo script pehle likhi hai wo pehle load hogi...    
+            //ui wale par me client side script.. socket
+            let socket=io.connect("https://board-a5me.onrender.com/");//connected frontend and backend    //iska accesss upar wle cdn se aaya
+            //socket ka instance mil gya. iska reference niche wali files ke pas hai
+        </script>
+    <script src="./script.js"></script>
+    <script src="./canvas.js"></script>
+</body>
+
+
+
+</html>
