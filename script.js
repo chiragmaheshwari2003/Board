@@ -15,7 +15,6 @@ let sticky=document.querySelector(".sticky");
 
 
 
-
 optCont.addEventListener('click',(e)=>{
 
     optFlag=!optFlag;  

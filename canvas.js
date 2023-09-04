@@ -155,7 +155,6 @@ function undoRedoCanvas(trackObj){
         tool.drawImage(img, 0, 0, canvas.width, canvas.height);
     }
 }
-
 socket.on("beginPath", (data)=>{ 
     beginPath(data);
 });
